@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    g 
+    <title>求数组中最大值与最小值</title>
+    <script>
+        function calculateMaxAndMin() {
+            var inputArray = document.getElementById("inputArray").value;
+            var num】 bers = inputArray.split(",").map(Number);
+            var max = Math.max(...numbers);
+            var min = Math.min(...numbers);
+            document.getElementById("max").innerHTML = "最大值： " + max;
+            document.getElementById("min").innerHTML = "最小值： " + min;
+        }
+    </script>
+</head>
+<body>
+    <h2>求数组中最大值与最小值</h2>
+    <label for="inputArray">输入数字用逗号隔开:</label>
+    <input type="text" id="inputArray">
+    <button onclick="calculateMaxAndMin()">计算</button>
+    <br>
+    <div id="max"></div>
+    <div id="min"></div>
+</body>
+</html>
