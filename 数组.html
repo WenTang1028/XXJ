@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组求和以及平均值</title>
+    <script>
+        function calculateSumAndAverage() {
+            var inputArray = document.getElementById("inputArray").value;
+            var numbers = inputArray.split(",").map(Number);
+            var sum = 0;
+            for (var i = 0; i < numbers.length; i++) {
+                sum += numbers[i];
+            }
+            var average = sum / numbers.length;
+            document.getElementById("sum").innerHTML = "和: " + sum;
+            document.getElementById("average").innerHTML = "平均值: " + average;
+        }
+    </script>
+</head>
+<body>
+    <h2>数组求和以及平均值</h2>
+    <label for="inputArray">输入数组用逗号隔开:</label>
+    <input type="text" id="inputArray">
+    <button onclick="calculateSumAndAverage()">计算</button>
+    <br>
+    <div id="sum"></div>
+    <div id="average"></div>
+</body>
+</html>
