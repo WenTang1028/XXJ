@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        let num1 = parseFloat(prompt("数字1"));
+let num2 = parseFloat(prompt("数字2"));
+let operator = prompt("请输入运算符(+ - * /):");
+let result;
+switch (operator) {
+    case '+':
+        result = num1 + num2;
+        break;
+    case '-':
+        result = num1 - num2;
+        break;
+    case '*':
+        result = num1 * num2;
+        break;
+    case '/':
+        if (num2 !== 0) {
+            result = num1 / num2;
+        } else {
+            result = "除数不能为0";
+        }
+        break;
+    default:
+        result = "无效的运算符";
+        break;
+}
+
+alert("结果为：" + result);
+
+    </script>
+</body>
+<html>
