@@ -17,22 +17,7 @@ public class 测试 {
 	        
 	        double result = 0.0;
 	        
-	        switch(operator) {
-	            case '+':
-	                result = num1 + num2;
-	                break;
-	            case '-':
-	                result = num1 - num2;
-	                break;
-	            case '*':
-	                result = num1 * num2;
-	                break;
-	            case '/':
-	                result = num1 / num2;
-	                break;
-	            default:
-	                System.out.println("无效的运算符");
-	        }
+	        
 	        
 	        System.out.println("计算结果: " + result);
 	        
